@@ -3,6 +3,8 @@ import typer
 def main(
     name: str,
     lastname: str = typer.Option("", help="Фамилия пользователя."),
+    
+    # --formal / -f переключает регистр обращения на официальный
     formal: bool = typer.Option(False, "--formal", "-f", help="Использовать формальное приветствие."),
 ):
     """
