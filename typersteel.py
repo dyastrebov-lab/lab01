@@ -1,3 +1,5 @@
+"""CLI-приветствие на базе typer."""
+
 import typer
 
 def main(
@@ -8,7 +10,7 @@ def main(
     formal: bool = typer.Option(False, "--formal", "-f", help="Использовать формальное приветствие."),
 ):
     """
-    Say hello to user.
+    Приветствует пользователя по имени
     """
     if formal:
         print(f"Добрый день, {name} {lastname}!")
