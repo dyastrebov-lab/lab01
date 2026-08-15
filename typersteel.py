@@ -8,7 +8,7 @@ def main(
     formal: bool = typer.Option(False, "--formal", "-f", help="Использовать формальное приветствие."),
 ):
     """
-    Говорит "Привет" пользователю, опционально используя фамилию и формальный стиль.
+    Say hello to user.
     """
     if formal:
         print(f"Добрый день, {name} {lastname}!")
