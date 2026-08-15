@@ -5,9 +5,10 @@ import json
 WHO="appsec"
 
 def Say_Hello( ):
-    print ("Hello "+WHO+" world")
-    sys.stdout.write("Hello %s world\n" % WHO)
-    print("Hello {} world".format(WHO))
-    print(f"Hello {WHO} world")
+    name = input("Enter your name: ")
+    print ("Hello "+WHO+" world from @"+name)
+    sys.stdout.write("Hello %s world from @%s\n" % (WHO, name))
+    print("Hello {} world from @{}".format(WHO, name))
+    print(f"Hello {WHO} world from @{name}")
 
 Say_Hello()
